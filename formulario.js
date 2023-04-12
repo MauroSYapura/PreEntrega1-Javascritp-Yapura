@@ -4,8 +4,7 @@ function preguntarNombre() {
 }
 
 function mostrarenlog(quemostrar) {
-  console.log("el nombre que ingresaste fue ", quemostrar);
-  //document.getElementById("txtNombre").innerHTML = "hola " + quemostrar;
+  document.getElementById("txtNombre").innerHTML = "hola " + quemostrar;
   console.log("hola " + quemostrar);
   preguntarEdad();
 }
@@ -16,23 +15,22 @@ function preguntarEdad() {
 
 function comprobarEdad(edad) {
   if (edad >= 15) {
-    //document.getElementById("txtEdad").innerHTML = "Tu edad es mayor a 15";
-    console.log("Tu edad es mayor a 15");
+    document.getElementById("txtEdad").innerHTML = "Tu edad es mayor a 15";
+
     mostrarenClases(true);
   } else {
-    //document.getElementById("txtEdad").innerHTML = "Tu edad es menor a 15";
-    console.log("Tu edad es menor a 15");
+    document.getElementById("txtEdad").innerHTML = "Tu edad es menor a 15";
     mostrarenClases(false);
   }
 }
 
 function mostrarenClases(condicion) {
   if (condicion == true) {
-    //document.getElementById("clases").innerHTML ="Las calases son: Lun-Mie, de 20 a 22 Hs.";
-    console.log("Las clases son: Lun-Mie, de 20 a 22 Hs.");
+    document.getElementById("clases").innerHTML =
+      "Las clases son: Lun-Mie, de 20 a 22 Hs.";
   } else {
-    //document.getElementById("clases").innerHTML ="Las calases son: Lun-Jue, de 17 a 19 Hs.";
-    console.log("Las clases son: Lun-Jue, de 17 a 19 Hs.");
+    document.getElementById("clases").innerHTML =
+      "Las clases son: Lun-Jue, de 17 a 19 Hs.";
   }
 }
 
